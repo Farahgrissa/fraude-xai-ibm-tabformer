@@ -9,12 +9,10 @@ Outil d'aide à la décision pour une équipe anti-fraude qui ne peut examiner q
 Il **classe les transactions par risque**, **déclenche une alerte** selon un seuil fixé par un **coût en dollars**,
 et **explique chaque alerte** par des codes motifs (SHAP).
 
-Projet Challenge 2 du module Data Mining (filières II3-IA et II3-IF), ENSI, année 2026-2027.
-
 | Ressource | Lien |
 |---|---|
-| Application (Streamlit Community Cloud) | *à compléter après déploiement* |
-| API (FastAPI, Render) | *à compléter* — documentation interactive : `/docs` |
+| Application (Streamlit Community Cloud) | [fraude-xai-ibm-tabformer.streamlit.app](https://fraude-xai-ibm-tabformer.streamlit.app) |
+| API (FastAPI, Render) | [fraude-xai-ibm-tabformer-api.onrender.com/docs](https://fraude-xai-ibm-tabformer-api.onrender.com/docs) — documentation interactive |
 | Notebooks | [`notebooks/`](notebooks/) |
 
 ---
