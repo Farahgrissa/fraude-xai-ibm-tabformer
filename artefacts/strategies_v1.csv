@@ -1,0 +1,7 @@
+stratégie,PR-AUC validation,écart-type (3 graines),temps (s)
+aucune (seuil seulement),0.2578,,147.6
+pondération des classes,0.1436,,167.3
+sous-échantillonnage 1:5,0.1295,0.0089,9.7
+sous-échantillonnage 1:10,0.1821,0.0225,10.9
+sous-échantillonnage 1:20,0.2353,0.0188,13.3
+1:20 puis SMOTE jusqu'à 1:5,0.0986,,8.5

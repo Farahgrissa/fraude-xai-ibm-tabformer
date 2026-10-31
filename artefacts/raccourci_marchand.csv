@@ -1,0 +1,3 @@
+modèle,PR-AUC,ROC-AUC,précision@3650,rappel@3650
+XGBoost (modèle principal),0.3075,0.9907,0.1268,0.6567
+XGBoost + risque du marchand,0.4652,0.9937,0.1449,0.7504
