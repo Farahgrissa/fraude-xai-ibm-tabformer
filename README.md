@@ -12,7 +12,7 @@ et **explique chaque alerte** par des codes motifs (SHAP).
 | Ressource | Lien |
 |---|---|
 | Application (Streamlit Community Cloud) | [fraude-xai-ibm-tabformer.streamlit.app](https://fraude-xai-ibm-tabformer.streamlit.app) |
-| API (FastAPI, Render) | [fraude-xai-ibm-tabformer-api.onrender.com/docs](https://fraude-xai-ibm-tabformer-api.onrender.com/docs) — documentation interactive |
+| API (FastAPI, Render) | [fraude-xai-ibm-tabformer.onrender.com/docs](https://fraude-xai-ibm-tabformer.onrender.com/docs) — documentation interactive (offre gratuite : le premier appel peut prendre ~1 min) |
 | Notebooks | [`notebooks/`](notebooks/) |
 
 ---

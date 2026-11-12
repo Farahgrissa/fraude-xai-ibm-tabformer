@@ -33,7 +33,7 @@ Deux services, comme pour le Challenge 1 :
 2. **Language : Docker**, branche `main`, offre **Free**.
 3. Variable d'environnement : aucune obligatoire (`PORT` est fourni par Render).
 4. **Health Check Path** : `/health`.
-5. Créer. Au bout de quelques minutes : `https://fraude-xai-ibm-tabformer-api.onrender.com/docs`.
+5. Créer. Au bout de quelques minutes : `https://fraude-xai-ibm-tabformer.onrender.com/docs`.
 
 L'offre gratuite met le service en veille après 15 minutes sans requête : le premier appel prend environ une minute.
 
@@ -43,7 +43,7 @@ L'offre gratuite met le service en veille après 15 minutes sans requête : le p
    fichier principal `app/Accueil.py`.
 2. **Advanced settings** : Python 3.13 ; dans **Secrets** :
    ```toml
-   API_URL = "https://fraude-xai-ibm-tabformer-api.onrender.com"
+   API_URL = "https://fraude-xai-ibm-tabformer.onrender.com"
    ```
 3. Deploy. Adresse proposée : `fraude-xai-ibm-tabformer.streamlit.app`.
 
