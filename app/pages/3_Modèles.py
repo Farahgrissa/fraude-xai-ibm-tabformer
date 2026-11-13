@@ -1,3 +1,4 @@
+import numpy as np
 import plotly.graph_objects as go
 import streamlit as st
 from commun import COULEURS, MODELES, config, configurer, scores, tableau
@@ -49,11 +50,13 @@ st.plotly_chart(fig, width="stretch")
 
 st.subheader("Score des fraudes et des transactions normales")
 nom = st.selectbox("Modèle", [m for m in MODELES if m in s.columns])
-rang = s[nom].rank(pct=True)
+rang = s[nom].rank(pct=True).to_numpy()
+bords = np.linspace(0, 1, 51)  # Histogramme calculé ici : on envoie 50 barres au navigateur, pas 500 000 points
 fig = go.Figure()
 for k, lab, coul in [(0, "normale", "#5d6d7e"), (1, "fraude", "#c0392b")]:
-    fig.add_histogram(x=rang[s["fraude"] == k], name=lab, histnorm="probability", nbinsx=50, marker_color=coul,
-                      opacity=0.6)
+    effectifs, _ = np.histogram(rang[y == k], bins=bords)
+    fig.add_bar(x=100 * (bords[:-1] + bords[1:]) / 2, y=effectifs / max(effectifs.sum(), 1), name=lab,
+                marker_color=coul, opacity=0.6, width=2)
 fig.update_layout(barmode="overlay", xaxis_title="rang du score (centile)", height=320, yaxis_type="log")
 st.plotly_chart(fig, width="stretch")
 st.caption("Un bon détecteur place les fraudes dans les derniers centiles. Les méthodes non supervisées repèrent "
